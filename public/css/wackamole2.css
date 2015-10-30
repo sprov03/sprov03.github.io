@@ -1,0 +1,68 @@
+body{
+	background: gray;
+}
+main{
+	background: #ddd;
+}
+h1{
+	text-align: center;
+}
+#score_board{
+	text-align: center;
+}
+#canvas{
+	background-image: url('/img/sky.png');
+	background-width:100%;
+	width:70%;
+	height:550px;
+	margin:0 auto;
+	border-radius:20px;
+	position:relative;
+}
+.crosshair { 
+	cursor: crosshair; 
+}
+/*#hill{
+	background: brown;
+	height:400px;
+	width: 100%;
+	border-radius:0 0 20px 20px;
+	position:absolute;
+	top:150px;
+}*/
+#grass{
+	background-image: url('/img/grass.png');
+	background-width: 100%;
+	height: 50px;
+	width: 100%;
+	border-radius: 0 0 20px 20px;
+	position:absolute;
+	top: 500px;
+}
+#ground{
+	background: brown;
+	background-image: url('/img/ground.png');
+	background-width: 100%;
+	height: 20px;
+	width: 100%;
+	border-radius: 0 0 20px 20px;
+	position: absolute;
+	top: 530px;
+}
+footer{
+	height:70px;
+	padding-top:40px;
+}
+.alive{
+	background-image: url('/img/alive.png');
+}
+.running1{
+	background-image: url('/img/run1.png');
+}
+.running2{
+	background-image:url('/img/run2.png');
+}
+.dead{
+	background-image: url('/img/dead.png');
+}
+
