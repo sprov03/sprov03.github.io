@@ -2,6 +2,8 @@
     box-sizing:border-box;
 }
 body{
+    touch-action:none;
+    touch-action:manipulation;
     background:gray;
 }
 header{
