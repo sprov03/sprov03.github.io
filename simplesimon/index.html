@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/simplesimon.css">
+	<title>Simple Simon</title>
+</head>
+<body>
+	<main class="container">
+		<header class="col-sm-12">
+			<h1>Wheel of Simon!!</h1>
+			<select id="mode">
+				<option data-mode="0">Easy</option>
+				<option data-mode="1">Normal</option>
+				<option data-mode="2">Hard</option>
+				<option data-mode="3">Insane</option>
+			</select>
+		</header>
+		<div id="simon" class="col-sm-12">
+			<div class="lights" id="red" data-color="red"></div>
+			<div class="lights" id="green" data-color="green"></div>
+			<div class="lights" id="yellow" data-color="yellow"></div>
+			<div class="lights" id="blue" data-color="blue"></div>
+
+			<div id="start">
+				<h2 id="play">start</h2>
+				<div id="scores">
+					<div id="current">
+						<span>current</span>
+						<p>0</p>
+					</div>
+					<div id="max">
+						<span>max</span>
+						<p>0</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/simplesimon2.js"></script>
+</body>
+</html>

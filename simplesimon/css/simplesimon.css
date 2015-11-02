@@ -1,0 +1,57 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background:gray;
+}
+header{
+    height:100px;
+    text-align: center;
+}
+select{
+    font-size:large;
+    width:100px;
+    text-align: center;
+}
+#simon{
+    background:black;
+    width:430px;
+    height:430px;
+    margin: 0 auto;
+    position:relative;
+    border-radius:50%;
+}
+.lights{
+    width:200;
+    height:200;
+    border-radius: 100% 0 0 0;
+    background:black;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+#start{
+    background:lightblue;
+    position:absolute;
+    width:170;
+    height:170;
+    border-radius:50%;
+    top:130;
+    left:130;
+    text-align:center;
+    border:solid black 10px;
+}
+#current{
+    background:transparent;
+    width:75;
+    float:left;
+}
+#max{
+    background:transparent;
+    width:75;
+    float:left;
+}
+
+
+
+
