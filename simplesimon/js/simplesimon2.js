@@ -25,7 +25,7 @@ $('#max').css('width',wide*.1744 + 'px');
 var topSmall = tall * .01886;
 var leftSmall = wide * .02326;
 var topBig = tall * .41509;
-var topSmall = wide * .51163;
+var leftBig = wide * .51163;
 
 
 
