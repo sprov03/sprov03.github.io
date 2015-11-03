@@ -1,3 +1,6 @@
+*{
+	touch-action:none;
+}
 body{
 	background: gray;
 }
