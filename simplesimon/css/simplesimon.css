@@ -6,7 +6,7 @@ body{
     background:gray;
 }
 main{
-    padding-right:10px;
+    margin:0 auto;
 }
 header{
     height:100px;
@@ -56,5 +56,27 @@ select{
     float:left;
 }
 
-
+@media (max-width: 600px) {
+  header{
+    font-size:13;
+    margin-top: -15px;
+  }
+  select{
+      margin-top: -15px;
+  }
+  #play{
+    margin-top: 5px;
+    font-size:20px;
+  }
+  #scores{
+    margin-top: -2px;
+    font-size: 8px;
+  }
+  #current{
+    margin-left: -3px;
+  }
+  #max{
+    margin-left: -5px;
+  }
+}
 
