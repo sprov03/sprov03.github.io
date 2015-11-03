@@ -1,22 +1,5 @@
 "use strict"
 
- function toggleFullScreen() {
-  var doc = window.document;
-  var docEl = doc.documentElement;
-
-  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-
-  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-    requestFullScreen.call(docEl);
-  }
-  else {
-    cancelFullScreen.call(doc);
-  }
-}
-
-toggleFullScreen();
-
 if (screen.width * 100 / screen.height < .81132){
 	var wide = screen.width * .95;
 	var tall = wide * 1.2325;
@@ -29,7 +12,7 @@ else {
 // var tall = screen.height*.95; // 530px
 // var wide = tall*.81132;		   // 430px
 
-$('main').css('height', tall + 'px');
+$('main').css('height', screen.height*2 + 'px');
 $('main').css('width', wide + 'px');
 $('header').css('height',tall*.1887 + 'px');
 $('select').css('width',wide*.2325 + 'px');
