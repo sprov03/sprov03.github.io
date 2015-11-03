@@ -1,5 +1,5 @@
 "use strict"
-
+window.scrollTo(0,1);
 
 if (screen.width * 100 / screen.height < .81132){
 	var wide = screen.width * .95;
