@@ -1,5 +1,7 @@
-*{
+html{
     touch-action:none;
+}
+*{
     box-sizing:border-box;
 }
 body{

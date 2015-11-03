@@ -1,11 +1,17 @@
 "use strict"
-var screenHeight = screen.height;
-var screenWidth = screen.width;
-var buttonWidth = 0;
 
 
-var tall = screen.height*.95; // 530px
-var wide = tall*.81132;		   // 430px
+if (screen.width * 100 / screen.height < .81132){
+	var wide = screen.width * .95;
+	var tall = wide * 1.2325;
+}
+else {
+	var tall = screen.height * .95;
+	var wide = tall * .81132;
+}
+
+// var tall = screen.height*.95; // 530px
+// var wide = tall*.81132;		   // 430px
 
 $('main').css('height', tall + 'px');
 $('main').css('width', wide + 'px');
