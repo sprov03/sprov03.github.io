@@ -13,7 +13,7 @@
 <body>
 	<main>
 		<header>
-			<h1>Wheel of Simon!!</h1>
+			<h4>Wheel of Simon!!</h4>
 			<select id="mode">
 				<option data-mode="0">Easy</option>
 				<option data-mode="1">Normal</option>
@@ -30,11 +30,11 @@
 			<div id="start">
 				<h2 id="play">start</h2>
 				<div id="scores">
-					<div id="current">
+					<div class="current" id="current1">
 						<span>current</span>
 						<p>0</p>
 					</div>
-					<div id="max">
+					<div class="max" id="max1">
 						<span>max</span>
 						<p>0</p>
 					</div>
@@ -42,6 +42,18 @@
 			</div>
 
 		</div>
+
+		<div id="scores2">
+			<div class="current">
+				<span>current</span>
+				<p>0</p>
+			</div>
+			<div class="max">
+				<span>max</span>
+				<p>0</p>
+			</div>
+		</div>
+
 	</main>
 
     <script src="js/jquery.js"></script>
