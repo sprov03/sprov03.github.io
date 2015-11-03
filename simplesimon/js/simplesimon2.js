@@ -1,35 +1,16 @@
 "use strict"
-var screenHeight = screen.height;
-var screenWidth = screen.width;
-var buttonWidth = 0;
 
+if (screen.width * 100 / screen.height < .81132){
+	var wide = screen.width * .78;
+	var tall = wide * 1.2325;
+}
+else {
+	var tall = screen.height * .78;
+	var wide = tall * .81132;
+}
 
-var tall = $('main').height(); // 530px
-var wide = tall*.81132;		   // 430px
-
-
-
-// "use strict"
-
-// if (screen.width * 100 / screen.height < .81132){
-// 	var wide = screen.width * .95;
-// 	var tall = wide * 1.2325;
-// }
-// else {
-// 	var tall = screen.height * .95;
-// 	var wide = tall * .81132;
-// }
-
-// // var tall = screen.height*.95; // 530px
-// // var wide = tall*.81132;		   // 430px
-
-// $('main').css('height', tall + 'px');
-// $('main').css('width', wide + 'px');
-
-
-
-
-
+$('main').css('height', tall + 'px');
+$('main').css('width', wide*1.45 + 'px');
 $('header').css('height',tall*.1887 + 'px');
 $('select').css('width',wide*.2325 + 'px');
 $('#simon').css('height',tall*.8113 + 'px');
@@ -42,8 +23,14 @@ $('#start').css('height',tall*.3210 + 'px');
 $('#start').css('width',wide*.3953 + 'px');
 $('#start').css('top',tall*.24528 + 'px');
 $('#start').css('left',wide*.30232 + 'px');
-$('#current').css('width',wide*.1744 + 'px');
-$('#max').css('width',wide*.1744 + 'px');
+$('#current').css('width',wide*.17 + 'px');
+$('#max').css('width',wide*.17 + 'px');
+
+
+var topSmall = tall * .01886;
+var leftSmall = wide * .02326;
+var topBig = tall * .41509;
+var leftBig = wide * .51163;
 
 
 
@@ -57,26 +44,26 @@ function light (idName, onColor, offColor, divSelector, slot) {
 	this.slot = slot;
 	this.position = [
 			function positionOne (){
-				lightId.div.css('top','10px');
-				lightId.div.css('left','10px');
+				lightId.div.css('top',topSmall + 'px');
+				lightId.div.css('left',leftSmall + 'px');
 				lightId.div.css('transform','rotate(0deg)');
 				return lightId;	
 			},
 			function positionTwo (){
-				lightId.div.css('top','10px');
-				lightId.div.css('left','220px');
+				lightId.div.css('top',topSmall + 'px');
+				lightId.div.css('left',leftBig + 'px');
 				lightId.div.css('transform','rotate(90deg)');
 				return lightId;	
 			},
 			function positionThree (){
-				lightId.div.css('top','220px');
-				lightId.div.css('left','10px');
+				lightId.div.css('top',topBig + 'px');
+				lightId.div.css('left',leftSmall + 'px');
 				lightId.div.css('transform','rotate(270deg)');
 				return lightId;	
 			},
 			function positionFour (){
-				lightId.div.css('top','220px');
-				lightId.div.css('left','220px');
+				lightId.div.css('top',topBig + 'px');
+				lightId.div.css('left',leftBig + 'px');
 				lightId.div.css('transform','rotate(180deg)');
 				return lightId;	
 			}];
