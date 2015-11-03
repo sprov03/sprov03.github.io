@@ -22,6 +22,11 @@ $('#start').css('left',wide*.30232 + 'px');
 $('#current').css('width',wide*.1744 + 'px');
 $('#max').css('width',wide*.1744 + 'px');
 
+var topSmall = tall * .01886;
+var leftSmall = wide * .02326;
+var topBig = tall * .41509;
+var topSmall = wide * .51163;
+
 
 
 function light (idName, onColor, offColor, divSelector, slot) {
@@ -34,26 +39,26 @@ function light (idName, onColor, offColor, divSelector, slot) {
 	this.slot = slot;
 	this.position = [
 			function positionOne (){
-				lightId.div.css('top','10px');
-				lightId.div.css('left','10px');
+				lightId.div.css('top',topSmall + 'px');
+				lightId.div.css('left',leftSmall + 'px');
 				lightId.div.css('transform','rotate(0deg)');
 				return lightId;	
 			},
 			function positionTwo (){
-				lightId.div.css('top','10px');
-				lightId.div.css('left','220px');
+				lightId.div.css('top',topSmall + 'px');
+				lightId.div.css('left',leftBig + 'px');
 				lightId.div.css('transform','rotate(90deg)');
 				return lightId;	
 			},
 			function positionThree (){
-				lightId.div.css('top','220px');
-				lightId.div.css('left','10px');
+				lightId.div.css('top',topBig + 'px');
+				lightId.div.css('left',leftSmall + 'px');
 				lightId.div.css('transform','rotate(270deg)');
 				return lightId;	
 			},
 			function positionFour (){
-				lightId.div.css('top','220px');
-				lightId.div.css('left','220px');
+				lightId.div.css('top',topBig + 'px');
+				lightId.div.css('left',leftBig + 'px');
 				lightId.div.css('transform','rotate(180deg)');
 				return lightId;	
 			}];
