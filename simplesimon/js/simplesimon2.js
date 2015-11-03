@@ -1,36 +1,41 @@
 "use strict"
 
 // if (screen.width * 100 / screen.height < .81132){
-	var wide = screen.width * .66;
-	var tall = wide * 1.2325;
+	// var wide = screen.width * .66;
+	// var tall = wide * 1.2325;
 // }
 // else {
 // 	var tall = screen.height * .78;
 // 	var wide = tall * .81132;
 // }
 
-$('main').css('height', tall + 'px');
-$('main').css('width', wide*1.45 + 'px');
-$('header').css('height',tall*.1887 + 'px');
-$('select').css('width',wide*.2325 + 'px');
-$('#simon').css('height',tall*.8113 + 'px');
-$('#simon').css('width',wide + 'px');
-$('.lights').css('height',tall*.3733 + 'px');
-$('.lights').css('width',wide*.4651 + 'px');
-$('.lights').css('top',tall*.01886 + 'px');
-$('.lights').css('left',wide*.02325 + 'px');
-$('#start').css('height',tall*.3210 + 'px');
-$('#start').css('width',wide*.3953 + 'px');
-$('#start').css('top',tall*.24528 + 'px');
-$('#start').css('left',wide*.30232 + 'px');
-$('#current').css('width',wide*.1744 + 'px');
-$('#max').css('width',wide*.1744 + 'px');
+// $('main').css('height', tall + 'px');
+// $('main').css('width', wide*1.45 + 'px');
+// $('header').css('height',tall*.1887 + 'px');
+// $('select').css('width',wide*.2325 + 'px');
+// $('#simon').css('height',tall*.8113 + 'px');
+// $('#simon').css('width',wide + 'px');
+// $('.lights').css('height',tall*.3733 + 'px');
+// $('.lights').css('width',wide*.4651 + 'px');
+// $('.lights').css('top',tall*.01886 + 'px');
+// $('.lights').css('left',wide*.02325 + 'px');
+// $('#start').css('height',tall*.3210 + 'px');
+// $('#start').css('width',wide*.3953 + 'px');
+// $('#start').css('top',tall*.24528 + 'px');
+// $('#start').css('left',wide*.30232 + 'px');
+// $('#current').css('width',wide*.1744 + 'px');
+// $('#max').css('width',wide*.1744 + 'px');
 
 
-var topSmall = tall * .01886;
-var leftSmall = wide * .02326;
-var topBig = tall * .41509;
-var leftBig = wide * .51163;
+// var topSmall = tall * .01886;
+// var leftSmall = wide * .02326;
+// var topBig = tall * .41509;
+// var leftBig = wide * .51163;
+
+var topSmall =10;
+var leftSmall = 10;
+var topBig = 220;
+var leftBig = 220;
 
 
 
