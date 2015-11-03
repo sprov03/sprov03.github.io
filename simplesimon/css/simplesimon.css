@@ -3,9 +3,10 @@
     box-sizing:border-box;
 }
 body{
-    background:gray;
+    background:black;
 }
 main{
+    background:gray;
     padding-right:10px;
 }
 header{
