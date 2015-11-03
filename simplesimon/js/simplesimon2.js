@@ -1,5 +1,6 @@
 "use strict"
-window.scrollTo(0,1);
+
+element.requestFullscreen();
 
 if (screen.width * 100 / screen.height < .81132){
 	var wide = screen.width * .95;
