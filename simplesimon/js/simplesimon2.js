@@ -12,7 +12,7 @@ else {
 // var tall = screen.height*.95; // 530px
 // var wide = tall*.81132;		   // 430px
 
-$('main').css('height', screen.height + 'px');
+$('main').css('height', tall + 'px');
 $('main').css('width', wide + 'px');
 $('header').css('height',tall*.1887 + 'px');
 $('select').css('width',wide*.2325 + 'px');
