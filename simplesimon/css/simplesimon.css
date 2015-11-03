@@ -1,8 +1,8 @@
 *{
+    touch-action:none;
     box-sizing:border-box;
 }
 body{
-    touch-action:none;
     background:gray;
 }
 header{
