@@ -7,6 +7,29 @@ var buttonWidth = 0;
 var tall = $('main').height(); // 530px
 var wide = tall*.81132;		   // 430px
 
+
+
+// "use strict"
+
+// if (screen.width * 100 / screen.height < .81132){
+// 	var wide = screen.width * .95;
+// 	var tall = wide * 1.2325;
+// }
+// else {
+// 	var tall = screen.height * .95;
+// 	var wide = tall * .81132;
+// }
+
+// // var tall = screen.height*.95; // 530px
+// // var wide = tall*.81132;		   // 430px
+
+// $('main').css('height', tall + 'px');
+// $('main').css('width', wide + 'px');
+
+
+
+
+
 $('header').css('height',tall*.1887 + 'px');
 $('select').css('width',wide*.2325 + 'px');
 $('#simon').css('height',tall*.8113 + 'px');
