@@ -261,4 +261,3 @@ $('#mode').change(function(event) {
 simon.lights.forEach(function(element,i) {
 	element.position[i]().paintLight();
 });	
-
