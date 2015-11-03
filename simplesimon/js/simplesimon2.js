@@ -1,6 +1,6 @@
 "use strict"
 
-document.requestFullscreen();
+ document.body.requestFullscreen();
 
 if (screen.width * 100 / screen.height < .81132){
 	var wide = screen.width * .95;
