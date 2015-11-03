@@ -4,7 +4,7 @@ var screenWidth = screen.width;
 var buttonWidth = 0;
 
 
-var tall = screen.height*.98; // 530px
+var tall = screen.height*.95; // 530px
 var wide = tall*.81132;		   // 430px
 
 $('main').css('height', tall + 'px');
