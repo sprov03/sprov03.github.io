@@ -5,7 +5,7 @@ var buttonWidth = 0;
 
 
 var tall = $('main').height(); // 530px
-var wide = tall*.8;		   // 430px
+var wide = tall*.81132;		   // 430px
 
 $('header').css('height',tall*.1887 + 'px');
 $('select').css('width',wide*.2325 + 'px');
