@@ -1,13 +1,13 @@
 "use strict"
 
-if (screen.width * 100 / screen.height < .81132){
-	var wide = screen.width * .78;
+// if (screen.width * 100 / screen.height < .81132){
+	var wide = screen.width * .66;
 	var tall = wide * 1.2325;
-}
-else {
-	var tall = screen.height * .78;
-	var wide = tall * .81132;
-}
+// }
+// else {
+// 	var tall = screen.height * .78;
+// 	var wide = tall * .81132;
+// }
 
 $('main').css('height', tall + 'px');
 $('main').css('width', wide*1.45 + 'px');
@@ -23,8 +23,8 @@ $('#start').css('height',tall*.3210 + 'px');
 $('#start').css('width',wide*.3953 + 'px');
 $('#start').css('top',tall*.24528 + 'px');
 $('#start').css('left',wide*.30232 + 'px');
-$('#current').css('width',wide*.17 + 'px');
-$('#max').css('width',wide*.17 + 'px');
+$('#current').css('width',wide*.1744 + 'px');
+$('#max').css('width',wide*.1744 + 'px');
 
 
 var topSmall = tall * .01886;
