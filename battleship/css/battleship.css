@@ -1,6 +1,9 @@
 #game_board{
 	background: pink;
 }
+h1{
+	text-align: center;
+}
 table{
 	width: 100%;
 	height: 400px;
@@ -17,4 +20,12 @@ tr {
 	width: 100%;
 	height: 200px;
 	border: 1px dashed blue;
+}
+
+
+
+@media (max-width: 768px) {
+	.score_board{
+		height:60px;
+	}
 }
