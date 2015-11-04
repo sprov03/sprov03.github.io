@@ -10,16 +10,29 @@ table{
 	border:1px solid black;
 	border-collapse: collapse;
 }
-
+#computer_board{
+	background:#003d99;
+}
+#player_board{
+	background:#0066ff;
+}
 tr {
 	width: 100%;
-	height: 50%
+	height: 20%;
 }
-
+td{
+	border:1px solid black;
+}
 .score_board {
 	width: 100%;
 	height: 200px;
 	border: 1px dashed blue;
+}
+.hit{
+	background: red;
+}
+.miss{
+	background: #1a344f;
 }
 
 
