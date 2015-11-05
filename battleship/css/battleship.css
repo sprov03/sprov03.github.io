@@ -31,6 +31,9 @@ td{
 	height: 200px;
 	border: 1px dashed blue;
 }
+.player_ship{
+	background:pink;
+}
 .hit{
 	background: red;
 }
