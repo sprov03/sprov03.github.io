@@ -1,3 +1,6 @@
+*{
+    touch-action:none;
+}
 #canvas_container{
 	position: relative;
 }
