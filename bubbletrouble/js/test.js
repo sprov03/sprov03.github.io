@@ -1,4 +1,4 @@
-//document.addEventListener( 'DOMContentLoaded', function () {
+document.addEventListener( 'DOMContentLoaded', function () {
 
 
 "use strict";
@@ -49,52 +49,6 @@ var counter = 0;
 		(event === 37) && gameObject.stopMovingLeft();
 	}
 
- 
-// ********************  Controller listeners  ************************\\
-
-	$('#dPadUp').on("mousedown", function(){
-		gameObject.jump();		
-	});
-
-	$('#dPadLeft').on("mousedown", function(){
-		if (gameObject.movingLeftFlag === false) {
-			gameObject.stopMovingRight();
-			square.ft = 15;
-			square.ftMax = 216;
-			square.ftSize = 1;
-			gameObject.movingLeftFlag = true;	
-		}		
-	});
-
-	$('#dPadRight').on("mousedown", function(){
-		if (gameObject.movingRightFlag === false){
-			gameObject.stopMovingLeft();
-			square.ft = 15;
-			square.ftMax = 216;
-			square.ftSize = 1;
-			gameObject.movingRightFlag = true;
-		}		
-	});
-
-	$('#dPadDown').on("mousedown", function(){
-		new gameObject.fire();		
-	});
-
-	$('#dPadUp').on("mouseup", function(){
-				
-	});
-
-	$('#dPadLeft').on("mouseup", function(){
-		gameObject.stopMovingLeft();	
-	});
-
-	$('#dPadRight').on("mouseup", function(){
-		gameObject.stopMovingRight();
-	});
-
-	$('#dPadDown').on("mouseup", function(){
-				
-	});
 
 
 		//************************  Variable Declarations  ****************\\
@@ -106,9 +60,6 @@ var counter = 0;
 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-
-	var controller = document.getElementById("myController");
-
 
 	/**
 	 *  Sizing for diffrent devices
@@ -130,23 +81,6 @@ var counter = 0;
 	cy *= .01;
 	cx *= .01;
 
-	/**
-	 *	Sizing for the controller based of the sizing of the canvas
-	 *
-	 *
-	 */
-	controller.style.width = String(ctx.canvas.width) + "px";
-	controller.style.height = String(ctx.canvas.width * .45) + "px";
-	controller.style.top = "1px";
-	controller.style.left = "1px";
-	document.getElementById('dPadUp').style.left    = String(81 * cx) + "px";
-	document.getElementById('dPadUp').style.top     = String(40 * cy) + "px";
-	document.getElementById('dPadLeft').style.left  = String(5 * cx) + "px";
-	document.getElementById('dPadLeft').style.top   = String(50 * cy) + "px";
-	document.getElementById('dPadRight').style.left = String(16.5 * cx) + "px";
-	document.getElementById('dPadRight').style.top  = String(50 * cy) + "px";
-	document.getElementById('dPadDown').style.left  = String(80 * cx) + "px";
-	document.getElementById('dPadDown').style.top   = String(60 * cy) + "px";
 
 	var gameObject = {
 
@@ -616,4 +550,4 @@ var counter = 0;
 
 	gameObject.paintCanvas();
 
-//}, false );//document ready function
+}, false );//document ready function
