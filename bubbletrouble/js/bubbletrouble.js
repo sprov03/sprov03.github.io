@@ -65,6 +65,7 @@ vis(function(){
 "use strict";
 
 var counter = 0;
+
     //*************************  Key Events  *************************\\
 
     $(document).keyup(function (event){
@@ -145,39 +146,19 @@ var counter = 0;
     cy *= .01;
     cx *= .01;
 
-    /**
-     *  Sizing for the controller based of the sizing of the canvas
-     *
-     *
-     */
-    // controller.style.width = String(ctx.canvas.width) + "px";
-    // controller.style.height = String(ctx.canvas.width * .45) + "px";
-    // controller.style.top = "1px";
-    // controller.style.left = "1px";
-    // document.getElementById('dPadUp').style.left    = String(200 * cSizing) + "px";
-    // document.getElementById('dPadUp').style.top     = String(40 * cSizing) + "px";
-    // document.getElementById('dPadLeft').style.left  = String(5 * cSizing) + "px";
-    // document.getElementById('dPadLeft').style.top   = String(50 * cSizing) + "px";
-    // document.getElementById('dPadRight').style.left = String(16.5 * cSizing) + "px";
-    // document.getElementById('dPadRight').style.top  = String(50 * cSizing) + "px";
-    // document.getElementById('dPadDown').style.left  = String(200 * cSizing) + "px";
-    // document.getElementById('dPadDown').style.top   = String(60 * cSizing) + "px";
-    // var buttons = document.getElementsByClassName('controller_button');
-
- //    for (var i = 0; i < buttons.length; i++) {
-    //  buttons[i].style.width = String(8 * cSizing) + "px";
-    //  buttons[i].style.height= String(8 * cSizing) + "px";
- //    }
-
  // ********************  Controller listeners  ************************\\
 
-
+var buttonFlag = false;
 function handleStart(evt) {
   evt.preventDefault();
   var el = document.getElementById("myCanvas");
   var touches = evt.changedTouches;
   var yOff = -70;
   var xOff = 0;
+
+  if ( buttonFlag === false){
+    gameObject.createButtons();
+  }
   // var yOff = -70;
   // var xOff = 0;
 
@@ -455,7 +436,7 @@ function handleEnd(evt) {
                     this.respawn();
                     return false;
                 }
-                if(other.type === 'turtle' && side === 'right' || side === 'left') {
+                if(other.type === 'turtle' && (side === 'right' || side === 'left') ) {
                     this.respawn();
                     return false;
                 }
@@ -548,7 +529,7 @@ function handleEnd(evt) {
 
             this.handleCollison = function (other, side) {
 
-                if ( other.type === 'player' && side === 'right' || side === 'left'){
+                if ( other.type === 'player' && (side === 'right' || side === 'left') ){
 
                     other.respawn();
                     return false;
@@ -984,6 +965,13 @@ function handleEnd(evt) {
             requestAnimationFrame(gameObject.paintCanvas);
         },// paintCanvas
 
+        createButtons: function () {
+            new gameObject.button ('square',200,45,20,20,'rgba(100,100,100,.3','jump');
+            new gameObject.button ('square',200,75,20,20,'rgba(100,100,100,.3','firePressed');
+            new gameObject.button ('square',30,60,20,20,'rgba(100,100,100,.3','rightPressed','stopMovingRight');
+            new gameObject.button ('square',5,60,20,20,'rgba(100,100,100,.3','leftPressed','stopMovingLeft'); 
+        },// createButtons
+
 
 
         topBoundary: function(topEdgeOfThis) {
@@ -1036,7 +1024,7 @@ function handleEnd(evt) {
 
     // ground
 
-    var turtle = new gameObject.enemyObj ( 120,50,7,7,'green');
+    new gameObject.enemyObj ( 120,50,7,7,'green');
 
     new gameObject.backgroundObj (440,85,1000,15,'brown');
 
@@ -1045,10 +1033,7 @@ function handleEnd(evt) {
     new gameObject.backgroundObj (0,85,400,15,'brown');
     new gameObject.backgroundObj (50,70,10,4,'yellow');
 
-    new gameObject.button ('square',200,55,20,20,'rgba(100,100,100,.3','jump');
-    new gameObject.button ('square',200,85,20,20,'rgba(100,100,100,.3','firePressed');
-    new gameObject.button ('square',30,60,20,20,'rgba(100,100,100,.3','rightPressed','stopMovingRight');
-    new gameObject.button ('square',5,60,20,20,'rgba(100,100,100,.3','leftPressed','stopMovingLeft');
+
 
     var fell = new gameObject.backgroundObj(-50,110,2000,50,'rgba(0,0,0,0)');
     fell.type = 'fell';
