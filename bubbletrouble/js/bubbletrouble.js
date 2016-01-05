@@ -1045,10 +1045,10 @@ function handleEnd(evt) {
     new gameObject.backgroundObj (0,85,400,15,'brown');
     new gameObject.backgroundObj (50,70,10,4,'yellow');
 
-    new gameObject.button ('square',200,65,10,10,'rgba(100,100,100,.3','jump');
-    new gameObject.button ('square',200,85,10,10,'rgba(100,100,100,.3','firePressed');
-    new gameObject.button ('square',20,70,10,10,'rgba(100,100,100,.3','rightPressed','stopMovingRight');
-    new gameObject.button ('square',5,70,10,10,'rgba(100,100,100,.3','leftPressed','stopMovingLeft');
+    new gameObject.button ('square',200,55,20,20,'rgba(100,100,100,.3','jump');
+    new gameObject.button ('square',200,85,20,20,'rgba(100,100,100,.3','firePressed');
+    new gameObject.button ('square',30,60,20,20,'rgba(100,100,100,.3','rightPressed','stopMovingRight');
+    new gameObject.button ('square',5,60,20,20,'rgba(100,100,100,.3','leftPressed','stopMovingLeft');
 
     var fell = new gameObject.backgroundObj(-50,110,2000,50,'rgba(0,0,0,0)');
     fell.type = 'fell';
