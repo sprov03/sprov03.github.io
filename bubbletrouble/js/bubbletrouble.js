@@ -131,7 +131,7 @@ var counter = 0;
      *  Gets the size of the canvas_container that is set by bootstrap
      *  and used that to set the canvas width and height.
      */
-    c.setAttribute('width', $('#canvas_container').width());
+    c.setAttribute('width', document.getElementById("main").offsetWidth - 2);
     c.setAttribute('height', ctx.canvas.width * .45);
     var cx = ctx.canvas.width;
     var cy = ctx.canvas.height;
@@ -178,20 +178,22 @@ function handleStart(evt) {
   var touches = evt.changedTouches;
   var yOff = -70;
   var xOff = 0;
+  // var yOff = -70;
+  // var xOff = 0;
 
-  if(screen.width <= 768){
+  // if(screen.width <= 768){
 
-    xOff = -17;
-  } else if (screen.width <= 990) {
+  //   xOff = -17;
+  // } else if (screen.width <= 990) {
 
-    xOff = -((screen.width - 722) /2) -14;
-  } else if (screen.width <= 1200) {
+  //   xOff = -((screen.width - 722) /2) -14;
+  // } else if (screen.width <= 1200) {
 
-    xOff = -((screen.width - 942) /2) - 3;
-  }else {
+  //   xOff = -((screen.width - 942) /2) - 3;
+  // }else {
 
-    xOff = -((screen.width - 1142) / 2) - 2;
-  }
+  //   xOff = -((screen.width - 1142) / 2) - 2;
+  // }
         
   for (var i = 0; i < touches.length; i++) {
   // console.log("clientX:" + ((evt.changedTouches[i].clientX / cSizing) + xOff) * cSizing);
@@ -1035,7 +1037,6 @@ function handleEnd(evt) {
     // ground
 
     var turtle = new gameObject.enemyObj ( 120,50,7,7,'green');
-    // gameObject.collisionCheckArray.push(turtle);
 
     new gameObject.backgroundObj (440,85,1000,15,'brown');
 
