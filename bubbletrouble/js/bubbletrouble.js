@@ -157,6 +157,7 @@ function handleStart(evt) {
   var xOff = 0;
 
   if ( buttonFlag === false){
+    buttonFlag = true;
     gameObject.createButtons();
   }
   // var yOff = -70;
