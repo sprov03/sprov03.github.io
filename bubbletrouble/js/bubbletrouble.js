@@ -971,10 +971,10 @@ function handleEnd(evt) {
             // new gameObject.button ('square',200,75,20,20,'rgba(100,100,100,.3','firePressed');
             // new gameObject.button ('square',30,60,20,20,'rgba(100,100,100,.3','rightPressed','stopMovingRight');
             // new gameObject.button ('square',5,60,20,20,'rgba(100,100,100,.3','leftPressed','stopMovingLeft'); 
-            new gameObject.button ('square',200,45,20,20,'pink','jump');
-            new gameObject.button ('square',200,75,20,20,'pink','firePressed');
-            new gameObject.button ('square',30,60,20,20,'pink','rightPressed','stopMovingRight');
-            new gameObject.button ('square',5,60,20,20,'pink','leftPressed','stopMovingLeft');
+            new gameObject.button ('square',200,45,20,20,'gray','jump');
+            new gameObject.button ('square',200,75,20,20,'gray','firePressed');
+            new gameObject.button ('square',30,60,20,20,'gray','rightPressed','stopMovingRight');
+            new gameObject.button ('square',5,60,20,20,'gray','leftPressed','stopMovingLeft');
         },// createButtons
 
 
